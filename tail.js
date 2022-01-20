@@ -37,7 +37,6 @@ module.exports = class Tail extends Events {
                     }
                 }
             }
-
         }
         catch (error) {
             if (error.name === 'AbortError')
