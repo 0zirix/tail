@@ -5,10 +5,9 @@ const readline = require('readline');
 const { watch } = require('fs/promises');
 
 module.exports = class Tail extends Events {
-    constructor(filepath) {
+    constructor() {
         super();
         this.controller = new AbortController();
-        this.start(filepath);
     }
 
     stop() {
